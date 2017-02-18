@@ -22,7 +22,7 @@ public class AngleBtwHourMinuteHands {
             int      h      = Integer.parseInt(in[0]);
             int      m      = Integer.parseInt(in[1]);
             double   angle  = findAngle(h, m);
-            System.out.println(angle + " degrees");
+            System.out.println(angle == (int) angle ? (int) angle + " degrees" : angle + " degrees");
         }        
         sc.close();
     }
